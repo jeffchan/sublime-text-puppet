@@ -3,4 +3,10 @@
     "working_dir": "${project_path:${folder:${file_path}}}",
     "selector": "source.pp",
     "path": "/opt/local/bin:$PATH"
+
+    "windows":
+    {
+        "cmd": [ "puppet.bat", "parser", "validate", "--color=false", "$file" ],
+        "path": "C:\\Program Files (x86)\\Puppet Labs\\Puppet\\bin;$PATH"
+    },
 }
